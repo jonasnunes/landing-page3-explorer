@@ -22,6 +22,11 @@ header ul {
   display: flex;
   gap: 4rem;
 }
+@media (max-width: 536px) {
+  header ul {
+    display: none;
+  }
+}
 header ul a {
   text-decoration: none;
   font-family: "Mulish", sans-serif;
@@ -40,11 +45,28 @@ header ul a:hover {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .main-section {
+    display: block;
+  }
+}
 .main-section-div {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   width: 50%;
+}
+@media (max-width: 900px) {
+  .main-section-div {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+  }
+}
+@media (max-width: 536px) {
+  .main-section-div {
+    width: 100%;
+  }
 }
 .main-section-div h1 {
   font-family: "Mulish", sans-serif;
@@ -76,8 +98,24 @@ header ul a:hover {
   cursor: pointer;
   font-size: 0.9rem;
 }
+@media (max-width: 900px) {
+  .main-section-div button {
+    margin: auto;
+  }
+}
 .main-section-div button:hover {
   opacity: 0.8;
+}
+@media (max-width: 900px) {
+  .main-section img {
+    display: block;
+    margin: auto;
+  }
+}
+@media (max-width: 536px) {
+  .main-section img {
+    display: none;
+  }
 }
 
 footer {
@@ -91,6 +129,11 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 536px) {
+  .balls {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

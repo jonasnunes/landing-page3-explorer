@@ -21,6 +21,8 @@ header
     ul
         display: flex
         gap: 4rem
+        @include mixins.quebra2 
+            display: none
 
         a
             text-decoration: none
@@ -38,12 +40,20 @@ header
         display: flex
         justify-content: space-between
         align-items: center
+        @include mixins.quebra1 
+            display: block
 
         &-div
             display: flex
             flex-direction: column
             gap: 3rem
             width: 50%
+            @include mixins.quebra1 
+                margin: auto
+                text-align: center
+                width: 70%
+            @include mixins.quebra2     
+                width: 100%
 
             h1
                 font-family: variables.$fonte-secundaria
@@ -74,9 +84,18 @@ header
                 color: #fff
                 cursor: pointer
                 font-size: .9rem
+                @include mixins.quebra1 
+                    margin: auto
             
             button:hover
                 opacity: .8
+
+        img
+                @include mixins.quebra1 
+                    display: block
+                    margin: auto
+                @include mixins.quebra2 
+                    display: none
 
 footer
     text-align: center
@@ -88,3 +107,5 @@ footer
     position: fixed
     bottom: 0
     right: 0
+    @include mixins.quebra2 
+        display: none
