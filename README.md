@@ -1,7 +1,7 @@
 <h1 align="center">Landing Page Explorer</h1>
 
 <h3>Tecnologias usadas:</h3>
-<p>HTML | CSS | SASS | PHP</p>
+<p>HTML | CSS | SASS</p>
 
 <h3>Objetivo do Projeto</h3>
 <p>Praticar o conhecimento nas tecnologias usadas no projeto</p>
